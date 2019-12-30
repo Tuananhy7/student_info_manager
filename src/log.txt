@@ -1,0 +1,802 @@
+No typos will be found - file '/bin/spelling.txt': No such file or directory
+WARNING: Missing or malformed SPDX-License-Identifier tag in line 1
+#1: FILE: add_student.c:1:
++#include <stdio.h>
+
+WARNING: please, no spaces at the start of a line
+#8: FILE: add_student.c:8:
++ void reverse(char s[])$
+
+ERROR: open brace '{' following function definitions go on the next line
+#8: FILE: add_student.c:8:
++ void reverse(char s[])
++ {
+
+WARNING: please, no spaces at the start of a line
+#9: FILE: add_student.c:9:
++ {$
+
+WARNING: please, no spaces at the start of a line
+#10: FILE: add_student.c:10:
++     int i, j;$
+
+WARNING: please, no spaces at the start of a line
+#11: FILE: add_student.c:11:
++     char c;$
+
+WARNING: please, no spaces at the start of a line
+#13: FILE: add_student.c:13:
++     for (i = 0, j = strlen(s)-1; i<j; i++, j--) {$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#13: FILE: add_student.c:13:
++     for (i = 0, j = strlen(s)-1; i<j; i++, j--) {
++         c = s[i];
+
+ERROR: spaces required around that '<' (ctx:VxV)
+#13: FILE: add_student.c:13:
++     for (i = 0, j = strlen(s)-1; i<j; i++, j--) {
+                                    ^
+
+ERROR: code indent should use tabs where possible
+#14: FILE: add_student.c:14:
++         c = s[i];$
+
+WARNING: please, no spaces at the start of a line
+#14: FILE: add_student.c:14:
++         c = s[i];$
+
+ERROR: code indent should use tabs where possible
+#15: FILE: add_student.c:15:
++         s[i] = s[j];$
+
+WARNING: please, no spaces at the start of a line
+#15: FILE: add_student.c:15:
++         s[i] = s[j];$
+
+ERROR: code indent should use tabs where possible
+#16: FILE: add_student.c:16:
++         s[j] = c;$
+
+WARNING: please, no spaces at the start of a line
+#16: FILE: add_student.c:16:
++         s[j] = c;$
+
+WARNING: please, no spaces at the start of a line
+#17: FILE: add_student.c:17:
++     }$
+
+ERROR: trailing whitespace
+#18: FILE: add_student.c:18:
++} $
+
+WARNING: please, no spaces at the start of a line
+#21: FILE: add_student.c:21:
++ void itoa(int n, char s[])$
+
+ERROR: open brace '{' following function definitions go on the next line
+#21: FILE: add_student.c:21:
++ void itoa(int n, char s[])
++ {
+
+WARNING: please, no spaces at the start of a line
+#22: FILE: add_student.c:22:
++ {$
+
+WARNING: please, no spaces at the start of a line
+#23: FILE: add_student.c:23:
++     int i, sign;$
+
+WARNING: please, no spaces at the start of a line
+#25: FILE: add_student.c:25:
++     if ((sign = n) < 0)  /* record sign */$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#25: FILE: add_student.c:25:
++     if ((sign = n) < 0)  /* record sign */
++         n = -n;          /* make n positive */
+
+ERROR: do not use assignment in if condition
+#25: FILE: add_student.c:25:
++     if ((sign = n) < 0)  /* record sign */
+
+ERROR: code indent should use tabs where possible
+#26: FILE: add_student.c:26:
++         n = -n;          /* make n positive */$
+
+WARNING: please, no spaces at the start of a line
+#26: FILE: add_student.c:26:
++         n = -n;          /* make n positive */$
+
+WARNING: please, no spaces at the start of a line
+#27: FILE: add_student.c:27:
++     i = 0;$
+
+WARNING: please, no spaces at the start of a line
+#28: FILE: add_student.c:28:
++     do {       /* generate digits in reverse order */$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#28: FILE: add_student.c:28:
++     do {       /* generate digits in reverse order */
++         s[i++] = n % 10 + '0';   /* get next digit */
+
+ERROR: code indent should use tabs where possible
+#29: FILE: add_student.c:29:
++         s[i++] = n % 10 + '0';   /* get next digit */$
+
+WARNING: please, no spaces at the start of a line
+#29: FILE: add_student.c:29:
++         s[i++] = n % 10 + '0';   /* get next digit */$
+
+WARNING: please, no spaces at the start of a line
+#30: FILE: add_student.c:30:
++     } while ((n /= 10) > 0);     /* delete it */$
+
+WARNING: please, no spaces at the start of a line
+#31: FILE: add_student.c:31:
++     if (sign < 0)$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#31: FILE: add_student.c:31:
++     if (sign < 0)
++         s[i++] = '-';
+
+ERROR: code indent should use tabs where possible
+#32: FILE: add_student.c:32:
++         s[i++] = '-';$
+
+WARNING: please, no spaces at the start of a line
+#32: FILE: add_student.c:32:
++         s[i++] = '-';$
+
+WARNING: please, no spaces at the start of a line
+#33: FILE: add_student.c:33:
++     s[i] = '\0';$
+
+WARNING: please, no spaces at the start of a line
+#34: FILE: add_student.c:34:
++     reverse(s);$
+
+ERROR: trailing whitespace
+#35: FILE: add_student.c:35:
++}  $
+
+WARNING: please, no spaces at the start of a line
+#39: FILE: add_student.c:39:
++    int c;$
+
+WARNING: Missing a blank line after declarations
+#40: FILE: add_student.c:40:
++    int c;
++    do {
+
+WARNING: please, no spaces at the start of a line
+#40: FILE: add_student.c:40:
++    do {$
+
+ERROR: code indent should use tabs where possible
+#41: FILE: add_student.c:41:
++        c = getchar();$
+
+WARNING: please, no spaces at the start of a line
+#41: FILE: add_student.c:41:
++        c = getchar();$
+
+WARNING: please, no spaces at the start of a line
+#42: FILE: add_student.c:42:
++    } while (c != '\n' && c != EOF);$
+
+ERROR: "foo* bar" should be "foo *bar"
+#45: FILE: add_student.c:45:
++struct student_node* load_file(struct student_node *head)
+
+WARNING: please, no spaces at the start of a line
+#47: FILE: add_student.c:47:
++    int i=0;$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#47: FILE: add_student.c:47:
++    int i=0;
+          ^
+
+WARNING: please, no spaces at the start of a line
+#48: FILE: add_student.c:48:
++    char *number_of_student=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#48: FILE: add_student.c:48:
++    char *number_of_student=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#48: FILE: add_student.c:48:
++    char *number_of_student=(char*)malloc(sizeof(char)*100);
+                            ^
+
+WARNING: please, no spaces at the start of a line
+#49: FILE: add_student.c:49:
++    struct student_data student_new;$
+
+WARNING: Missing a blank line after declarations
+#50: FILE: add_student.c:50:
++    struct student_data student_new;
++    student_new.name=(char*)malloc(sizeof(char)*100);
+
+WARNING: please, no spaces at the start of a line
+#50: FILE: add_student.c:50:
++    student_new.name=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#50: FILE: add_student.c:50:
++    student_new.name=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#50: FILE: add_student.c:50:
++    student_new.name=(char*)malloc(sizeof(char)*100);
+                     ^
+
+WARNING: please, no spaces at the start of a line
+#51: FILE: add_student.c:51:
++    student_new.age=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#51: FILE: add_student.c:51:
++    student_new.age=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#51: FILE: add_student.c:51:
++    student_new.age=(char*)malloc(sizeof(char)*100);
+                    ^
+
+WARNING: please, no spaces at the start of a line
+#52: FILE: add_student.c:52:
++    student_new.score=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#52: FILE: add_student.c:52:
++    student_new.score=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#52: FILE: add_student.c:52:
++    student_new.score=(char*)malloc(sizeof(char)*100);
+                      ^
+
+WARNING: please, no spaces at the start of a line
+#54: FILE: add_student.c:54:
++    FILE *fp=fopen("data_base.txt","r");$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#54: FILE: add_student.c:54:
++    FILE *fp=fopen("data_base.txt","r");
+             ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#54: FILE: add_student.c:54:
++    FILE *fp=fopen("data_base.txt","r");
+                                   ^
+
+WARNING: Missing a blank line after declarations
+#55: FILE: add_student.c:55:
++    FILE *fp=fopen("data_base.txt","r");
++    fgets(number_of_student, 100, fp);
+
+WARNING: please, no spaces at the start of a line
+#55: FILE: add_student.c:55:
++    fgets(number_of_student, 100, fp);$
+
+WARNING: please, no spaces at the start of a line
+#56: FILE: add_student.c:56:
++    i=atoi(number_of_student);$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#56: FILE: add_student.c:56:
++    i=atoi(number_of_student);
+      ^
+
+WARNING: please, no spaces at the start of a line
+#57: FILE: add_student.c:57:
++    while(i)$
+
+ERROR: that open brace { should be on the previous line
+#57: FILE: add_student.c:57:
++    while(i)
++    {
+
+ERROR: space required before the open parenthesis '('
+#57: FILE: add_student.c:57:
++    while(i)
+
+WARNING: please, no spaces at the start of a line
+#58: FILE: add_student.c:58:
++    {$
+
+ERROR: code indent should use tabs where possible
+#59: FILE: add_student.c:59:
++        fgets(student_new.name, 100, fp);$
+
+WARNING: please, no spaces at the start of a line
+#59: FILE: add_student.c:59:
++        fgets(student_new.name, 100, fp);$
+
+ERROR: code indent should use tabs where possible
+#60: FILE: add_student.c:60:
++        fgets(student_new.age, 100, fp);$
+
+WARNING: please, no spaces at the start of a line
+#60: FILE: add_student.c:60:
++        fgets(student_new.age, 100, fp);$
+
+ERROR: code indent should use tabs where possible
+#61: FILE: add_student.c:61:
++        fgets(student_new.score, 100, fp);$
+
+WARNING: please, no spaces at the start of a line
+#61: FILE: add_student.c:61:
++        fgets(student_new.score, 100, fp);$
+
+ERROR: code indent should use tabs where possible
+#62: FILE: add_student.c:62:
++        head=add_node(head, student_new);$
+
+WARNING: please, no spaces at the start of a line
+#62: FILE: add_student.c:62:
++        head=add_node(head, student_new);$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#62: FILE: add_student.c:62:
++        head=add_node(head, student_new);
+             ^
+
+ERROR: code indent should use tabs where possible
+#63: FILE: add_student.c:63:
++        printf("loading...\n");$
+
+WARNING: please, no spaces at the start of a line
+#63: FILE: add_student.c:63:
++        printf("loading...\n");$
+
+ERROR: code indent should use tabs where possible
+#64: FILE: add_student.c:64:
++        i--;$
+
+WARNING: please, no spaces at the start of a line
+#64: FILE: add_student.c:64:
++        i--;$
+
+WARNING: please, no spaces at the start of a line
+#65: FILE: add_student.c:65:
++    }$
+
+WARNING: please, no spaces at the start of a line
+#66: FILE: add_student.c:66:
++    fclose(fp);$
+
+WARNING: please, no spaces at the start of a line
+#67: FILE: add_student.c:67:
++    return head;$
+
+WARNING: please, no spaces at the start of a line
+#72: FILE: add_student.c:72:
++    char *result=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#72: FILE: add_student.c:72:
++    char *result=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#72: FILE: add_student.c:72:
++    char *result=(char*)malloc(sizeof(char)*100);
+                 ^
+
+WARNING: Missing a blank line after declarations
+#73: FILE: add_student.c:73:
++    char *result=(char*)malloc(sizeof(char)*100);
++    memset(result, 0, 100);
+
+WARNING: please, no spaces at the start of a line
+#73: FILE: add_student.c:73:
++    memset(result, 0, 100);$
+
+WARNING: please, no spaces at the start of a line
+#74: FILE: add_student.c:74:
++    strcat(result,student_new->name);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#74: FILE: add_student.c:74:
++    strcat(result,student_new->name);
+                  ^
+
+WARNING: please, no spaces at the start of a line
+#75: FILE: add_student.c:75:
++    strcat(result,student_new->age);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#75: FILE: add_student.c:75:
++    strcat(result,student_new->age);
+                  ^
+
+WARNING: please, no spaces at the start of a line
+#76: FILE: add_student.c:76:
++    strcat(result,student_new->score);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#76: FILE: add_student.c:76:
++    strcat(result,student_new->score);
+                  ^
+
+WARNING: please, no spaces at the start of a line
+#77: FILE: add_student.c:77:
++    return result;$
+
+WARNING: please, no spaces at the start of a line
+#82: FILE: add_student.c:82:
++    system("@cls||clear");$
+
+WARNING: please, no spaces at the start of a line
+#83: FILE: add_student.c:83:
++    struct student_data student_new;$
+
+WARNING: Missing a blank line after declarations
+#84: FILE: add_student.c:84:
++    struct student_data student_new;
++    student_new.name=(char*)malloc(sizeof(char)*100);
+
+WARNING: please, no spaces at the start of a line
+#84: FILE: add_student.c:84:
++    student_new.name=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#84: FILE: add_student.c:84:
++    student_new.name=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#84: FILE: add_student.c:84:
++    student_new.name=(char*)malloc(sizeof(char)*100);
+                     ^
+
+WARNING: please, no spaces at the start of a line
+#85: FILE: add_student.c:85:
++    student_new.score=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#85: FILE: add_student.c:85:
++    student_new.score=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#85: FILE: add_student.c:85:
++    student_new.score=(char*)malloc(sizeof(char)*100);
+                      ^
+
+WARNING: please, no spaces at the start of a line
+#86: FILE: add_student.c:86:
++    student_new.age=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#86: FILE: add_student.c:86:
++    student_new.age=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#86: FILE: add_student.c:86:
++    student_new.age=(char*)malloc(sizeof(char)*100);
+                    ^
+
+WARNING: please, no spaces at the start of a line
+#89: FILE: add_student.c:89:
++    clean_stdin();$
+
+WARNING: please, no spaces at the start of a line
+#91: FILE: add_student.c:91:
++    printf("enter name student: ");$
+
+WARNING: please, no spaces at the start of a line
+#92: FILE: add_student.c:92:
++    fgets(student_new.name, 20, stdin);$
+
+WARNING: please, no spaces at the start of a line
+#93: FILE: add_student.c:93:
++    printf("enter age student: ");$
+
+WARNING: please, no spaces at the start of a line
+#94: FILE: add_student.c:94:
++    fgets(student_new.age, 20, stdin);$
+
+WARNING: please, no spaces at the start of a line
+#95: FILE: add_student.c:95:
++    printf("enter score student: ");$
+
+WARNING: please, no spaces at the start of a line
+#96: FILE: add_student.c:96:
++    fgets(student_new.score, 20, stdin);$
+
+ERROR: trailing whitespace
+#97: FILE: add_student.c:97:
++    $
+
+WARNING: please, no spaces at the start of a line
+#97: FILE: add_student.c:97:
++    $
+
+WARNING: please, no spaces at the start of a line
+#98: FILE: add_student.c:98:
++    head=add_node(head, student_new);$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#98: FILE: add_student.c:98:
++    head=add_node(head, student_new);
+         ^
+
+WARNING: please, no spaces at the start of a line
+#99: FILE: add_student.c:99:
++    printf("add student successful\n");$
+
+WARNING: please, no spaces at the start of a line
+#100: FILE: add_student.c:100:
++    return head;$
+
+WARNING: please, no spaces at the start of a line
+#105: FILE: add_student.c:105:
++    int number_of_student=0;$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#105: FILE: add_student.c:105:
++    int number_of_student=0;
+                          ^
+
+WARNING: please, no spaces at the start of a line
+#106: FILE: add_student.c:106:
++    char *str=(char*)malloc(sizeof(char)*100);$
+
+ERROR: "(foo*)" should be "(foo *)"
+#106: FILE: add_student.c:106:
++    char *str=(char*)malloc(sizeof(char)*100);
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#106: FILE: add_student.c:106:
++    char *str=(char*)malloc(sizeof(char)*100);
+              ^
+
+WARNING: please, no spaces at the start of a line
+#107: FILE: add_student.c:107:
++    FILE *fp=fopen("data_base.txt","w");$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#107: FILE: add_student.c:107:
++    FILE *fp=fopen("data_base.txt","w");
+             ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#107: FILE: add_student.c:107:
++    FILE *fp=fopen("data_base.txt","w");
+                                   ^
+
+WARNING: please, no spaces at the start of a line
+#108: FILE: add_student.c:108:
++    struct student_node *temp=head;$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#108: FILE: add_student.c:108:
++    struct student_node *temp=head;
+                              ^
+
+WARNING: Missing a blank line after declarations
+#109: FILE: add_student.c:109:
++    struct student_node *temp=head;
++    while(temp->next != NULL)
+
+WARNING: please, no spaces at the start of a line
+#109: FILE: add_student.c:109:
++    while(temp->next != NULL)$
+
+ERROR: that open brace { should be on the previous line
+#109: FILE: add_student.c:109:
++    while(temp->next != NULL)
++    {
+
+ERROR: space required before the open parenthesis '('
+#109: FILE: add_student.c:109:
++    while(temp->next != NULL)
+
+WARNING: please, no spaces at the start of a line
+#110: FILE: add_student.c:110:
++    {$
+
+ERROR: code indent should use tabs where possible
+#111: FILE: add_student.c:111:
++        temp=temp->next;$
+
+WARNING: please, no spaces at the start of a line
+#111: FILE: add_student.c:111:
++        temp=temp->next;$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#111: FILE: add_student.c:111:
++        temp=temp->next;
+             ^
+
+ERROR: code indent should use tabs where possible
+#112: FILE: add_student.c:112:
++        number_of_student++;$
+
+WARNING: please, no spaces at the start of a line
+#112: FILE: add_student.c:112:
++        number_of_student++;$
+
+WARNING: please, no spaces at the start of a line
+#113: FILE: add_student.c:113:
++    }$
+
+WARNING: please, no spaces at the start of a line
+#114: FILE: add_student.c:114:
++    number_of_student++;$
+
+ERROR: trailing whitespace
+#115: FILE: add_student.c:115:
++    $
+
+WARNING: please, no spaces at the start of a line
+#115: FILE: add_student.c:115:
++    $
+
+WARNING: please, no spaces at the start of a line
+#116: FILE: add_student.c:116:
++    itoa(number_of_student, str);$
+
+WARNING: please, no spaces at the start of a line
+#117: FILE: add_student.c:117:
++    fprintf(fp,"%s",str);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#117: FILE: add_student.c:117:
++    fprintf(fp,"%s",str);
+               ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#117: FILE: add_student.c:117:
++    fprintf(fp,"%s",str);
+                    ^
+
+WARNING: please, no spaces at the start of a line
+#118: FILE: add_student.c:118:
++    fprintf(fp,"%s","\n");$
+
+ERROR: space required after that ',' (ctx:VxV)
+#118: FILE: add_student.c:118:
++    fprintf(fp,"%s","\n");
+               ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#118: FILE: add_student.c:118:
++    fprintf(fp,"%s","\n");
+                    ^
+
+WARNING: please, no spaces at the start of a line
+#119: FILE: add_student.c:119:
++    temp=head;$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#119: FILE: add_student.c:119:
++    temp=head;
+         ^
+
+WARNING: please, no spaces at the start of a line
+#120: FILE: add_student.c:120:
++    while(temp != NULL)$
+
+ERROR: that open brace { should be on the previous line
+#120: FILE: add_student.c:120:
++    while(temp != NULL)
++    {
+
+ERROR: space required before the open parenthesis '('
+#120: FILE: add_student.c:120:
++    while(temp != NULL)
+
+WARNING: please, no spaces at the start of a line
+#121: FILE: add_student.c:121:
++    {$
+
+ERROR: code indent should use tabs where possible
+#122: FILE: add_student.c:122:
++        fprintf(fp,"%s",temp->student_new.name);$
+
+WARNING: please, no spaces at the start of a line
+#122: FILE: add_student.c:122:
++        fprintf(fp,"%s",temp->student_new.name);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#122: FILE: add_student.c:122:
++        fprintf(fp,"%s",temp->student_new.name);
+                   ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#122: FILE: add_student.c:122:
++        fprintf(fp,"%s",temp->student_new.name);
+                        ^
+
+ERROR: code indent should use tabs where possible
+#123: FILE: add_student.c:123:
++        fprintf(fp,"%s",temp->student_new.age);$
+
+WARNING: please, no spaces at the start of a line
+#123: FILE: add_student.c:123:
++        fprintf(fp,"%s",temp->student_new.age);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#123: FILE: add_student.c:123:
++        fprintf(fp,"%s",temp->student_new.age);
+                   ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#123: FILE: add_student.c:123:
++        fprintf(fp,"%s",temp->student_new.age);
+                        ^
+
+ERROR: code indent should use tabs where possible
+#124: FILE: add_student.c:124:
++        fprintf(fp,"%s",temp->student_new.score);$
+
+WARNING: please, no spaces at the start of a line
+#124: FILE: add_student.c:124:
++        fprintf(fp,"%s",temp->student_new.score);$
+
+ERROR: space required after that ',' (ctx:VxV)
+#124: FILE: add_student.c:124:
++        fprintf(fp,"%s",temp->student_new.score);
+                   ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#124: FILE: add_student.c:124:
++        fprintf(fp,"%s",temp->student_new.score);
+                        ^
+
+ERROR: code indent should use tabs where possible
+#125: FILE: add_student.c:125:
++        temp=temp->next;$
+
+WARNING: please, no spaces at the start of a line
+#125: FILE: add_student.c:125:
++        temp=temp->next;$
+
+ERROR: spaces required around that '=' (ctx:VxV)
+#125: FILE: add_student.c:125:
++        temp=temp->next;
+             ^
+
+WARNING: please, no spaces at the start of a line
+#126: FILE: add_student.c:126:
++    }$
+
+WARNING: please, no spaces at the start of a line
+#127: FILE: add_student.c:127:
++    fprintf(fp,"%s","STORE_END");$
+
+ERROR: space required after that ',' (ctx:VxV)
+#127: FILE: add_student.c:127:
++    fprintf(fp,"%s","STORE_END");
+               ^
+
+ERROR: space required after that ',' (ctx:VxV)
+#127: FILE: add_student.c:127:
++    fprintf(fp,"%s","STORE_END");
+                    ^
+
+WARNING: please, no spaces at the start of a line
+#128: FILE: add_student.c:128:
++    fclose(fp);$
+
+WARNING: adding a line without newline at end of file
+#129: FILE: add_student.c:129:
++}
+
+total: 80 errors, 104 warnings, 129 lines checked
+
+NOTE: For some of the reported defects, checkpatch may be able to
+      mechanically convert to the typical style using --fix or --fix-inplace.
+
+NOTE: Whitespace errors detected.
+      You may wish to use scripts/cleanpatch or scripts/cleanfile
+
+add_student.c has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.

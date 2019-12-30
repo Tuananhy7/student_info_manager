@@ -5,13 +5,15 @@
 
 int main()
 {
-    system("@cls||clear");
+	int mode;
+
+	system("@cls||clear");
     /*load file data into linked list*/
     head=load_file(head);
 
     while(1)
     {
-        int mode;
+        
         printf("STUDENT INFO APP\n");
         printf("Select Mode: \n");
         
