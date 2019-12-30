@@ -7,6 +7,6 @@
 #include "delete_student.h"
 #include "search_student.h"
 
-struct student_node *head=NULL;
+struct student_node *head;
 
 #endif
